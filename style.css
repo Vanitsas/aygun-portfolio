@@ -268,7 +268,7 @@ h1 {
 }
 
 /* ─── SKILLS ─── */
-.skills-container { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+.skills-container { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; }
 
 .skill-category {
     background: var(--card);
@@ -428,6 +428,10 @@ footer {
 }
 
 /* ─── RESPONSIVE ─── */
+@media (max-width: 1100px) {
+    .skills-container { grid-template-columns: repeat(2, 1fr); }
+}
+
 @media (max-width: 900px) {
     .skills-container,
     .contact-grid,
